@@ -7,6 +7,8 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.text :description
       t.integer :price
       t.string :location
+      t.integer :integer
+
 
       t.belongs_to :host, index: true
 
