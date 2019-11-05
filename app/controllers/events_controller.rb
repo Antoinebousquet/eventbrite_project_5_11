@@ -32,9 +32,9 @@ class EventsController < ApplicationController
       'location' => params[:location],
       'host_id' => current_user.id)
     if @event.save
-      redirect_to event_path(current_user.hosted_events.last)
+      redirect_to event_path(current_user.hosted_events.last), notice: 'Success'
     else
-      render 'new'
+      render 'new', notice: 'Fail'
     end
   end
 
