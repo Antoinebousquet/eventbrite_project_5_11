@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_11_05_114212) do
     t.text "description"
     t.integer "price"
     t.string "location"
+    t.integer "integer"
     t.bigint "host_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

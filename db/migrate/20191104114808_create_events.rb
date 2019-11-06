@@ -8,9 +8,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.integer :price
       t.string :location
       t.integer :integer
-
-
-      t.belongs_to :host, index: true
+      t.references :host, index: true
 
       t.timestamps
     end
